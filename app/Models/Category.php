@@ -22,7 +22,7 @@ class Category extends Model
         'updated_at'
     ];
 
-    public function task(): HasMany {
+    public function tasks(): HasMany {
         return $this->hasMany(Task::class);
     }
 }
