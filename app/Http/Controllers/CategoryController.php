@@ -34,7 +34,7 @@ class CategoryController extends Controller
             if (!$category) {
                 return RequestResponses::responseError(
                     404,
-                    "The user does not exist"
+                    "The category does not exist"
                 );
             }
 
@@ -52,7 +52,7 @@ class CategoryController extends Controller
         try {
             $category = Category::create($category->all());
             return RequestResponses::response200(
-                "The user was created correctly",
+                "The category was created correctly",
                 $category
             );
         } catch (Exception $e) {
@@ -68,7 +68,7 @@ class CategoryController extends Controller
             if (!$category_to_update) {
                 return RequestResponses::responseError(
                     404,
-                    "The user does not exist"
+                    "The category does not exist"
                 );
             }
 
@@ -78,7 +78,7 @@ class CategoryController extends Controller
             $category_to_update->save();
 
             return RequestResponses::response200(
-                "The user has been updated",
+                "The category has been updated",
                 $category_to_update
             );
         } catch (Exception $e) {
@@ -92,12 +92,12 @@ class CategoryController extends Controller
             if (!$category_to_delete) {
                 return RequestResponses::responseError(
                     404,
-                    "The user does not exist"
+                    "The category does not exist"
                 );
             }
 
             $category_to_delete->delete();
-            return RequestResponses::response201("The user has been deleted");
+            return RequestResponses::response201("The category has been deleted");
         } catch (Exception $e) {
             return CheckErrors::check($e);
         }

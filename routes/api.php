@@ -1,10 +1,16 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
-Route::get("/category", [CategoryController::class, 'getAll']);
-Route::get('/category/{id}', [CategoryController::class, 'get']);
-Route::post('/category', [CategoryController::class, 'create']);
-Route::put('/category/{id}', [CategoryController::class, 'update']);
-Route::delete('/category/{id}', [CategoryController::class, 'delete']);
+function generalRoutes(string $prefix, mixed $class) {
+    Route::get("/{$prefix}", [$class, 'getAll']);
+    Route::get("/{$prefix}/{id}", [$class, 'get']);
+    Route::post("/{$prefix}", [$class, 'create']);
+    Route::put("/{$prefix}/{id}", [$class, 'update']);
+    Route::delete("/{$prefix}/{id}", [$class, 'delete']);
+}
+
+generalRoutes('category', CategoryController::class);
+generalRoutes('task', TaskController::class);
