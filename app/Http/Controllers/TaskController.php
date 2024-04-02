@@ -60,7 +60,7 @@ class TaskController extends Controller
 
             $task = Task::create($task->all());
             return RequestResponses::response200(
-                'The user was created correctly',
+                'The task was created correctly',
                 $task
             );
         } catch (Exception $e) {
