@@ -20,7 +20,7 @@
 
 ![Category Validators](./categories-imgs/category-validations.PNG)
 
--   El usuario se ha insertado correctamente
+-   La categoría se ha insertado correctamente
 
 ![Category inseted correctly](./categories-imgs/category-created-correctly.PNG)
 
@@ -30,10 +30,6 @@
 
 ## Consultas "PUT"
 
--   El usuario a actualizar no existe
-
-![Category not found](./categories-imgs/get-not-exist.PNG)
-
 -   La categoría a actualizar no existe
 
 ![Category not found in update](./categories-imgs/update-not-exist.PNG)
@@ -42,7 +38,7 @@
 
 ![Category validated in update](./categories-imgs/category-validate-update.PNG)
 
--   El usuario se ha actualizado
+-   La categoría se ha actualizado
 
 ![Category update correctly](./categories-imgs/category-update-correctly.PNG)
 
