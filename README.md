@@ -56,3 +56,5 @@ APP_URL=http://localhost
 ## Vista de la aplicación
 
 [Documentación del CRUD: Categorías](https://github.com/ErickSiguache/Task-List-API-Laravel/blob/main/docs/category-crud.md)
+
+[Documentación del CRUD: Tareas](https://github.com/ErickSiguache/Task-List-API-Laravel/blob/main/docs/task-crud.md)
